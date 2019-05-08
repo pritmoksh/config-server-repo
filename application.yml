@@ -1,1 +1,10 @@
-# config-server-repo
+#Actuactor configuration
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env"
+  endpoint:
+    health:
+      show-details: ALWAYS
